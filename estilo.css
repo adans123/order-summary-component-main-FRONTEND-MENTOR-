@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+body{
+    color: hsl(240, 1%, 67%);
+    font-family: 'Red Hat Display', sans-serif;
+    background-color:  hsl(225, 100%, 94%);
+}
+
+.fondo-dasktop{
+    width: 100%;
+    height: 66.2vh;
+    position: absolute;
+    z-index: -1;
+    background-image: url(images/pattern-background-desktop.svg);
+}
+
+.contenedor-order{
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0px auto;
+
+}
+
+.contenido-order{
+    width: 450px;
+    margin-top: 50px;
+    border-radius: 20px;
+    text-align: center;  
+     background-color: white;
+}
+#imagen-illustration{
+    border-radius: 10px 10px 0px 0px ;
+}
+
+.contenido-order h2{
+    color: black;
+}
+
+.contenido-order  p{
+    line-height: 25px;
+}
+
+.contenedor-music{
+    width: 80%;
+    margin: 10px auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contenido-music{
+   width: 50%;
+    display: flex;
+    align-items: center;
+    
+}
+
+.contenido-music b{
+     color: black;
+}
+
+.contenedor-music a:hover{
+   color: hsl(224, 23%, 55%);
+}
+
+.contenido-payment{
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 10px auto;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.contenido-payment button{
+    color: white;
+     width: 100%;
+     height: 40px;
+     margin: 5px 0px ;
+     border-radius: 10px;
+     border-style: none;
+     padding: 10px 0px;
+     background-color: hsl(245, 75%, 52%);
+}
+
+.contenido-payment button:hover{
+    background-color: hsl(245, 90%, 69%);
+    cursor: pointer;
+}
+
+
+
+#segundo-btn-payment{
+    color: rgb(168, 166, 166);
+    background-color: white;
+    margin-bottom: 50px;
+}
+
+#segundo-btn-payment:hover{
+    color: black;
+}
+
+@media screen and (max-width:600px) {
+    .contenedor-order{
+        width: 100%;
+    }
+    .contenido-order{
+        width: 350px;
+    }
+
+    #imagen-illustration{
+        width: 100%;
+        height: 170px;
+    }
+
+    .contenido-music{
+        width: 70%;
+    }
+
+    .contenido-payment{
+        margin-top: 25px;
+    }
+
+    .contenido-payment button{
+        height: 47px;
+    }
+}
